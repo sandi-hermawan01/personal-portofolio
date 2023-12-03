@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&family=Roboto+Slab:wght@100;300;500;600;700;800;900&family=Roboto:wght@400;700&family=Sahitya&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="lamp.css" />
+    <title>Portofolio</title>
+  </head>
+
+  <body>
+    <header id="header-nav">
+      <span id="logo-nav">Zsans</span>
+      <nav id="nav-parent">
+        <nav id="nav-child">
+          <a href="#hero-section">Main</a>
+          <a href="#project-section">Project</a>
+          <a href="#about-section">About</a>
+          <a href="#contact-section">Contact</a>
+          <button id="menu">
+            <span></span>
+            <span></span>
+          </button>
+        </nav>
+      </nav>
+    </header>
+
+    <!-- project section -->
+    <div id="container">
+      <section id="hero-section">
+        <!-- <div id="particles"></div> -->
+        <!-- <canvas id="canvas" style="background: transparent"></canvas> -->
+        <div id="noise-svg">
+          <!-- gives background a bit of texture -->
+          <!-- <filter id="noiseFilter">
+            <feTurbulence
+              type="fractalNoise"
+              baseFrequency="1.5"
+              numOctaves="3"
+              stitchTiles="stitch"
+            />
+          </filter>
+          <rect id="noise-rect" filter="url(#noiseFilter)" /> -->
+        </div>
+        <section class="first-section">
+          <div class="hero-content">
+            <h1 class="hero-headline">Sandi Portofolio</h1>
+            <p class="hero-secondary-line">
+              Personal Portofolio For Self-Propesionalize
+            </p>
+            <a href="#contact-section" class="btn">let's chat</a>
+          </div>
+          <div class="clock off">
+            <div class="shadow"></div>
+
+            <div class="base-container">
+              <div class="base"><div></div></div>
+            </div>
+            <div class="small-outer-pipe">
+              <div class="small-inner-pipe"></div>
+            </div>
+            <div class="outer-pipe">
+              <div class="inner-pipe"></div>
+            </div>
+            <div class="pipe-accents">
+              <div class="top-tube"></div>
+              <div class="tube-holders">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="top"></div>
+              <div class="topinset"></div>
+              <div class="left">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="right">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <div class="bottom-left"></div>
+              <div class="bottom-right"></div>
+            </div>
+
+            <div class="display">
+              <div class="row">
+                <div class="col">
+                  <div>8</div>
+                  <div id="char01">0</div>
+                  <div id="char02">0</div>
+                </div>
+                <div class="col">
+                  <div>8</div>
+                  <div id="char11">0</div>
+                  <div id="char12">0</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div>8</div>
+                  <div id="char21">0</div>
+                  <div id="char22">0</div>
+                </div>
+                <div class="col">
+                  <div>8</div>
+                  <div id="char31">0</div>
+                  <div id="char32">0</div>
+                </div>
+              </div>
+              <div style="height: 0.2em"></div>
+              <div class="small-row">
+                <div class="row">
+                  <div class="col">
+                    <div>8</div>
+                    <div id="char41">0</div>
+                    <div id="char42">0</div>
+                  </div>
+                  <div class="col">
+                    <div>8</div>
+                    <div id="char51">0</div>
+                    <div id="char52">0</div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div>8</div>
+                  <div id="char61">0</div>
+                  <div id="char62">0</div>
+                </div>
+                <div class="col">
+                  <div>8</div>
+                  <div id="char71">0</div>
+                  <div id="char72">0</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div>8</div>
+                  <div id="char81">0</div>
+                  <div id="char82">0</div>
+                </div>
+                <div class="col">
+                  <div>8</div>
+                  <div id="char91">0</div>
+                  <div id="char92">0</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div>8</div>
+                  <div id="char101">0</div>
+                  <div id="char102">0</div>
+                </div>
+                <div class="col">
+                  <div>8</div>
+                  <div id="char111">0</div>
+                  <div id="char112">0</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="glass-tube"></div>
+            <div class="hex">
+              <div class="overlay"></div>
+            </div>
+
+            <div class="tube-base-container">
+              <div class="wires">
+                <div></div>
+                <div></div>
+              </div>
+              <div class="tube-base"></div>
+              <div class="rods">
+                <div class="left-rod"></div>
+                <div class="center-rod"></div>
+                <div class="right-rod"></div>
+              </div>
+              <div class="tube-btm"></div>
+            </div>
+
+            <div class="power-cord">
+              <div></div>
+              <div></div>
+            </div>
+
+            <div
+              class="button"
+              onclick="body.querySelector('.clock').classList.toggle('off')"
+            >
+              <div></div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section id="project-section">
+        <div class="shadow-b"></div>
+        <h1 class="section-title" data-text="works">Projects</h1>
+        <p class="section-info">
+          Few of my projects, I have done these past years working with amazing
+          people
+        </p>
+
+        <!-- filter buttons -->
+        <div class="filters">
+          <button class="filter-btn active" data-filter-value="all">all</button>
+          <button class="filter-btn" data-filter-value="frontend">
+            frontend
+          </button>
+          <button class="filter-btn" data-filter-value="javascript">
+            javascript
+          </button>
+          <button class="filter-btn" data-filter-value="react">react js</button>
+          <button class="filter-btn" data-filter-value="backend">
+            backend
+          </button>
+          <button class="filter-btn" data-filter-value="fullstack">
+            fullstack
+          </button>
+        </div>
+
+        <!-- project gallery -->
+
+        <div class="project-gallery">
+          <!-- <a href="#" class="project-card" style="border-radius: 20px">
+            <img
+              src="./assets/img/project-1.png"
+              class="project-image"
+              alt=""
+            />
+            <span class="tags">#javascript, #fullstack</span>
+          </a> -->
+        </div>
+
+        <!-- project details  -->
+        <div id="project-info">
+          <div class="project-details">
+            <img src="./assets/img/project-1.png" class="image" alt="" />
+
+            <h2 class="name">Project name</h2>
+
+            <p class="details">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+              tortor nibh, tristique at diam et, venenatis cursus felis. Aenean
+              arcu nulla ....
+            </p>
+
+            <div class="btn-grps">
+              <a href="#" class="btn light" id="live-btn">see live</a>
+              <a
+                href="#"
+                class="btn transparent"
+                id="github-btn"
+                style="display: none"
+                >github repo</a
+              >
+            </div>
+          </div>
+
+          <div class="coding-language-breakdown">
+            <div class="cl-card">
+              <div class="language">
+                <img src="./assets/img/html.png" class="icon" alt="" />
+                <p class="name">HTML</p>
+              </div>
+              <div class="progress-track" data-name="html">
+                <div class="progress"></div>
+              </div>
+            </div>
+            <div class="cl-card">
+              <div class="language">
+                <img src="./assets/img/css.png" class="icon" alt="" />
+                <p class="name">CSS</p>
+              </div>
+              <div class="progress-track" data-name="css">
+                <div class="progress"></div>
+              </div>
+            </div>
+            <div class="cl-card">
+              <div class="language">
+                <img src="./assets/img/javascript.png" class="icon" alt="" />
+                <p class="name">JavaScript</p>
+              </div>
+              <div class="progress-track" data-name="javascript">
+                <div class="progress"></div>
+              </div>
+            </div>
+            <div class="cl-card">
+              <div class="language">
+                <img src="./assets/img/reactjs.png" class="icon" alt="" />
+                <p class="name">React JS</p>
+              </div>
+              <div class="progress-track" data-name="reactjs">
+                <div class="progress"></div>
+              </div>
+            </div>
+            <div class="cl-card">
+              <div class="language">
+                <img src="./assets/img/nodejs.png" class="icon" alt="" />
+                <p class="name">Node JS</p>
+              </div>
+              <div class="progress-track" data-name="nodejs">
+                <div class="progress"></div>
+              </div>
+            </div>
+            <div class="cl-card">
+              <div class="language">
+                <img src="./assets/img/database.png" class="icon" alt="" />
+                <p class="name">SQL / No SQL</p>
+              </div>
+              <div class="progress-track" data-name="database">
+                <div class="progress"></div>
+              </div>
+            </div>
+            <div class="cl-card">
+              <div class="language">
+                <img src="./assets/img/tailwind.png" class="icon" alt="" />
+                <p class="name">Tailwind</p>
+              </div>
+              <div class="progress-track" data-name="tailwind">
+                <div class="progress"></div>
+              </div>
+            </div>
+            <div class="cl-card">
+              <div class="language">
+                <img src="./assets/img/other.png" class="icon" alt="" />
+                <p class="name">Other</p>
+              </div>
+              <div class="progress-track" data-name="other">
+                <div class="progress"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- about section -->
+      <section id="about-section">
+        <h1 class="section-title" data-text="resume">about me</h1>
+        <p class="section-info">My Skills, Experiences and education</p>
+
+        <div class="about-me-container">
+          <div class="about-image-container">
+            <img src="./assets/img/project-6.png" class="about-image" alt="" />
+            <a
+              href="./assets/file/cv-sandi-hermawan.pdf"
+              class="btn light download-btn"
+              download
+              >Download CV</a
+            >
+          </div>
+          <div class="personal-info">
+            <h2 class="title">Personal info</h2>
+
+            <p><span>Name :</span> Sandi Hermawan,.S.Kom</p>
+            <p><span>Personal Brand :</span> Zsans</p>
+            <p><span>Age :</span> 22 years</p>
+            <p><span>Nationality :</span> Indonesia</p>
+            <p><span>Freelance :</span> Available</p>
+            <p><span>Email :</span> sandihermawanf01@gmail.com</p>
+            <p><span>Connect with me</span></p>
+
+            <div class="social-links-container">
+              <a
+                href="https://www.linkedin.com/in/sandi-hermawan1"
+                class="social-links"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <!-- <a href="#" class="social-links"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="#" class="social-links"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="#" class="social-links"
+                ><i class="fa-brands fa-youtube"></i
+              ></a> -->
+              <a href="https://github.com/sandi-hermawan01" class="social-links"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- skills -->
+        <div class="skills">
+          <h2 class="title">Skills</h2>
+
+          <div class="skills-container">
+            <div class="skill-card">
+              <img src="./assets/img/html.png" class="skill-image" alt="" />
+              <p class="skill-name">HTML</p>
+            </div>
+            <div class="skill-card">
+              <img src="./assets/img/css.png" class="skill-image" alt="" />
+              <p class="skill-name">CSS</p>
+            </div>
+            <div class="skill-card">
+              <img
+                src="./assets/img/javascript.png"
+                class="skill-image"
+                alt=""
+              />
+              <p class="skill-name">JavaScript</p>
+            </div>
+            <div class="skill-card">
+              <img
+                src="./assets/img/jupyter_logo.png"
+                class="skill-image"
+                alt=""
+              />
+              <p class="skill-name">Jupyter</p>
+            </div>
+            <div class="skill-card">
+              <img src="./assets/img/nodejs.png" class="skill-image" alt="" />
+              <p class="skill-name">Node JS</p>
+            </div>
+            <!-- <div class="skill-card">
+              <img src="./assets/img/tailwind.png" class="skill-image" alt="" />
+              <p class="skill-name">Tailwind</p>
+            </div>
+            <div class="skill-card">
+              <img src="./assets/img/postgres.png" class="skill-image" alt="" />
+              <p class="skill-name">Postgres</p>
+            </div>
+            <div class="skill-card">
+              <img src="./assets/img/mongo.png" class="skill-image" alt="" />
+              <p class="skill-name">Mongo DB</p>
+            </div> -->
+            <div class="skill-card">
+              <img src="./assets/img/firebase.png" class="skill-image" alt="" />
+              <p class="skill-name">Firebase</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- education and experiences -->
+        <div class="edu-exp">
+          <h2 class="title">Education & experience</h2>
+
+          <div class="edu-exp-container">
+            <div class="edu-exp-card">
+              <i class="fa-solid fa-suitcase card-icon"></i>
+              <span class="time">2023</span>
+              <h3 class="card-title">
+                Web Developer -
+                <span>Magang di Balai Kota JDIH Kota Bandung</span>
+              </h3>
+
+              <p class="card-info">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus tortor nibh, tristique at diam et, venenatis cursus
+                felis. Aenean arcu nulla, pharetra
+              </p>
+            </div>
+            <div class="edu-exp-card">
+              <i class="fa-solid fa-graduation-cap card-icon"></i>
+              <span class="time">2023</span>
+              <h3 class="card-title">
+                AI Developer -
+                <span>Program Kampus Merdeka Orbit Future Academy</span>
+              </h3>
+
+              <p class="card-info">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus tortor nibh, tristique at diam et, venenatis cursus
+                felis. Aenean arcu nulla, pharetra
+              </p>
+            </div>
+            <div class="edu-exp-card">
+              <i class="fa-solid fa-graduation-cap card-icon"></i>
+              <span class="time">2022</span>
+              <h3 class="card-title">
+                Game Developer -
+                <span>Program Kampus Merdeka Agate Academy</span>
+              </h3>
+
+              <p class="card-info">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus tortor nibh, tristique at diam et, venenatis cursus
+                felis. Aenean arcu nulla, pharetra
+              </p>
+            </div>
+            <div class="edu-exp-card">
+              <i class="fa-solid fa-graduation-cap card-icon"></i>
+              <span class="time">2019 - 2023</span>
+              <h3 class="card-title">
+                Degree - <span>Sekolah Tinggi Teknologi Bandung</span>
+              </h3>
+
+              <p class="card-info">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus tortor nibh, tristique at diam et, venenatis cursus
+                felis. Aenean arcu nulla, pharetra
+              </p>
+            </div>
+            <div class="edu-exp-card">
+              <i class="fa-solid fa-graduation-cap card-icon"></i>
+              <span class="time">2016 - 2019</span>
+              <h3 class="card-title">Degree - <span>SMAN 1 Ciwidey</span></h3>
+
+              <p class="card-info">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus tortor nibh, tristique at diam et, venenatis cursus
+                felis. Aenean arcu nulla, pharetra
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- contact section -->
+      <section id="contact-section">
+        <h1 class="section-title" data-text="contact">let's chat</h1>
+        <p class="section-info">
+          You can fill this form to contact me about any questions you have.
+          Feel free to ask any query. I would love to hear about your idea and
+          work with you. Let’s talk
+        </p>
+
+        <div class="contact-container">
+          <div class="contact-details">
+            <div class="contact-card">
+              <i class="fa-solid fa-location-dot card-icon"></i>
+              <span class="card-title">Address</span>
+              <p class="contac-info">
+                Curug, Panundaan, Kec. Ciwidey, Kabupaten Bandung, Jawa Barat
+                40973
+              </p>
+            </div>
+            <div class="contact-card">
+              <i class="fa-solid fa-envelope card-icon"></i>
+              <span class="card-title">Mail Me</span>
+              <p class="contac-info">sandihermawanf01@gmail.com</p>
+            </div>
+            <div class="contact-card">
+              <i class="fa-solid fa-phone card-icon"></i>
+              <span class="card-title">Phone No.</span>
+              <p class="contac-info">+62 85156017844</p>
+            </div>
+          </div>
+
+          <!-- contact form -->
+          <div class="contact-form">
+            <form>
+              <div class="name-email-input">
+                <input
+                  type="text"
+                  id="full-name"
+                  placeholder="Full Name"
+                  required
+                />
+              </div>
+              <input type="email" id="email" placeholder="email"  />
+              <textarea id="message" placeholder="message" ></textarea>
+              <button class="contact-btn" onclick="sendMail()" >
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer class="footer">Sandi Hermawan Portofolio © 2023</footer>
+    <!-- three js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script
+      async
+      src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"
+    ></script>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@latest/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@latest/examples/jsm/"
+        }
+      }
+    </script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("3e8mrgs16ncbxGfz8");
+      })();
+    </script>
+
+    <!-- loacl js files -->
+    <script src="projects.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
