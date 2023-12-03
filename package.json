@@ -11,12 +11,12 @@
   },
   "name": "portofolio",
   "version": "1.0.0",
-  "main": "server.js",
+  "main": "script.js",
   "engines": {
     "node": "18.x"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "node script.js"
   },
   "author": "",
   "license": "ISC",
