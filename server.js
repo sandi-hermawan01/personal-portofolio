@@ -3,7 +3,7 @@ const path = require("path");
 const fileupload = require("express-fileupload");
 
 let initial_path = path.join(__dirname, "./features/blogging-site");
-let basic_path = path.join(__dirname);
+let basic_path = path.join(__dirname, "./public");
 
 const app = express();
 app.use(express.static(initial_path));
