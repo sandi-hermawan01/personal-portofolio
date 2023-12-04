@@ -2,7 +2,7 @@ const express = require("express");
 const path = require("path");
 const fileupload = require("express-fileupload");
 
-let initial_path = path.join(__dirname, "./features/blogging-site");
+let initial_path = path.join(__dirname, "./public/features/blogging-site");
 let basic_path = path.join(__dirname, "./public");
 
 const app = express();
@@ -26,7 +26,7 @@ app.post("/upload", (req, res) => {
   // image name
   let imagename = date.getDate() + date.getTime() + file.name;
   // image upload path
-  let path = "./features/blogging-site/uploads/" + imagename;
+  let path = "./public/features/blogging-site/uploads/" + imagename;
 
   // create upload
   file.mv(path, (err, result) => {
