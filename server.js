@@ -11,9 +11,9 @@ app.use(express.static(basic_path));
 app.use(fileupload());
 app.use(express.json());
 
-app.get("/", (req, res) => {
-  res.sendFile(path.join(basic_path, "index.html"));
-});
+// app.get("/", (req, res) => {
+//   res.sendFile(path.join(basic_path, "index.html"));
+// });
 
 app.get("/editor", (req, res) => {
   res.sendFile(path.join(initial_path, "editor.html"));
