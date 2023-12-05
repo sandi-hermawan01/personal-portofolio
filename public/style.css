@@ -33,20 +33,24 @@ body {
 }
 
 #logo-nav {
-  display: grid;
+  display: flex;
   position: fixed;
-  font-family: "Roboto", sans-serif;
-  font-size: 24px;
-  font-weight: bold;
-  color: #fff;
+  width: 75px;
+  height: 45px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
   border: 2px solid white;
-  padding: 5px;
+}
+
+#logo-nav img {
+  overflow: hidden;
 }
 
 #header-nav #logo-nav {
-  top: 3%;
+  top: 2%;
   width: 80px;
-  left: 30px;
+  left: 20px;
   height: auto;
   margin: 0 auto;
   opacity: 1;
@@ -60,7 +64,7 @@ body {
   height: auto;
   justify-content: start;
   align-items: start;
-  top: 2%;
+  top: 23px;
   background-color: transparent;
 }
 
@@ -72,7 +76,7 @@ body {
   width: 420px;
   z-index: 100;
   top: 100px;
-  margin-left: 33%;
+  margin-left: 28%;
   background: rgba(255, 255, 255, 0.2);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
@@ -1090,8 +1094,8 @@ textarea {
   }
   #header-nav #nav-child {
     width: 345px;
-    margin-left: 15px;
-    margin-top: 65px;
+    margin-left: 20px;
+    margin-top: 85px;
   }
 
   #header-nav #nav-child button {
@@ -1115,12 +1119,12 @@ textarea {
 }
 /* new */
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 380px) {
   #header-nav #nav-child {
     height: 60px;
     width: 320px;
-    margin-left: 28px;
-    margin-top: 80px;
+    margin-left: 20px;
+    margin-top: 90px;
   }
 
   #header-nav #nav-child a {
