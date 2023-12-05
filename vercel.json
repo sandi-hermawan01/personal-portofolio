@@ -4,7 +4,7 @@
     { "source": "/(.*)", "destination": "/" },
     {
       "source": "/editor",
-      "destination": "/public/features/blogging-site/editor.html"
+      "destination": "/editor.html"
     }
   ]
 }
