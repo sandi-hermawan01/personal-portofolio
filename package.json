@@ -16,8 +16,7 @@
     "node": "18.x"
   },
   "scripts": {
-    "start": "node server.js",
-    "deploy": "npm start"
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
