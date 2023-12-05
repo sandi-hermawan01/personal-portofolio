@@ -2,8 +2,8 @@
   "version": 2,
   "rewrites": [
     {
-      "source": "/admin",
-      "destination": "/dashboard.html"
+      "source": "/(.*)",
+      "destination": "/editor"
     }
   ]
 }
