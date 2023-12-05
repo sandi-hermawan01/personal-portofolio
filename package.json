@@ -17,7 +17,7 @@
   },
   "scripts": {
     "start": "node server.js",
-    "deploy": "npm start pre-deploy && now --public && now alias"
+    "deploy": "npm start"
   },
   "author": "",
   "license": "ISC",
