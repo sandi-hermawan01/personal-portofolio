@@ -1,7 +1,6 @@
 {
   "version": 2,
   "rewrites": [
-    { "source": "/(.*)", "destination": "/" },
     {
       "source": "/editor",
       "destination": "/editor.html"
