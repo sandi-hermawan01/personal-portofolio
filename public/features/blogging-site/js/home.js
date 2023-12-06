@@ -13,6 +13,9 @@ db.collection("blogs")
 
 const createBlog = (blog) => {
   let data = blog.data();
+
+  
+  console.log("test :", data);
   blogSection.innerHTML += `
     <div class="blog-card">
         <img src="${data.bannerImage}" class="blog-image" alt="">
@@ -29,11 +32,11 @@ position.addEventListener("mousemove", (e) => {
   position.style.setProperty("--x", e.clientX + "px");
 });
 
-const pagePacman = document.querySelector(".pacman-page");
+// const pagePacman = document.querySelector(".pacman-page");
 
-function toPacman() {
-  location.href = pagePacman;
-}
+// function toPacman() {
+//   location.href = pagePacman;
+// }
 
 function toBloghome2() {
   location.href = pageBloghome2;

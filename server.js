@@ -15,10 +15,13 @@ app.use(fileupload());
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  res.sendFile(path.join(basic_path, "server-off.html"));
+  res.sendFile(path.join(basic_path, "index.html"));
 });
 
 app.get("/editor", (req, res) => {
+  res.sendFile(path.join(initial_path, "editor.html"));
+});
+app.get("/:blog/editor", (req, res) => {
   res.sendFile(path.join(initial_path, "editor.html"));
 });
 
@@ -50,17 +53,7 @@ app.get("/:blog", (req, res) => {
   res.sendFile(path.join(initial_path, "blog.html"));
 });
 
-app.get("/:blog/editor", (req, res) => {
-  res.sendFile(path.join(initial_path, "editor.html"));
-});
-
-app.use((req, res) => {
-  res.json("404");
-});
-
 app.listen(PORT, function (err) {
   if (err) console.log(err);
   console.log("Server Listening on PORT", PORT);
 });
-
-module.exports = app;

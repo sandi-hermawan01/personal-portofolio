@@ -33,7 +33,7 @@ const uploadImage = (uploadFile, uploadType) => {
         if (uploadType == "image") {
           addImage(data, file.name);
         } else {
-          bannerPath = `${location.origin}/${data}`;
+          bannerPath = `${window.location.origin}/${data}`;
           banner.style.backgroundImage = `url("${bannerPath}")`;
         }
       });
