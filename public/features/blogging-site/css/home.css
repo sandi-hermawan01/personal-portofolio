@@ -49,6 +49,31 @@ body {
   text-transform: capitalize;
   color: #616161;
 }
+.link-login {
+  padding: 10px;
+  margin-left: 10px;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #616161;
+}
+
+.blogs-title {
+  width: 100%;
+  height: auto;
+  padding: 0 0 0 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.blogs-title h1 {
+  width: auto;
+  height: auto;
+  padding: 10px;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #444444;
+  border-bottom: 2px solid #616161;
+  border-top: 2px solid #616161;
+}
 
 .header {
   margin-top: 60px;
@@ -103,7 +128,7 @@ body {
 .blogs-section {
   word-break: break-word;
   width: 100%;
-  padding: 50px 5vw;
+  padding: 10px 5vw;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 80px;

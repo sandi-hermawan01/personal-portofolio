@@ -14,11 +14,16 @@ body {
   z-index: 99;
   background: #fff;
 }
+.link-login {
+  display: none;
+}
 
 .firebaseui-idp-button:hover {
   background: rgba(128, 128, 128, 0.438) !important;
 }
-
+.firebaseui-info-bar-message {
+  content: none;
+}
 .heading {
   color: #616161;
   font-size: 60px;

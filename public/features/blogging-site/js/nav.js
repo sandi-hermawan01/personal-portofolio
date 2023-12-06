@@ -8,7 +8,7 @@ auth.onAuthStateChanged((user) => {
         `;
   } else {
     ul.innerHTML += `
-        <li class="link-item"><a href="/admin" class="link">Login</a></li>
+        <li class="link-item"><a href="/admin" class="link-login">Login</a></li>
         `;
   }
 });
