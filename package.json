@@ -6,6 +6,7 @@
     "express-fileupload": "^1.4.3",
     "express.js": "^1.0.0",
     "firebase": "^10.6.0",
+    "node-fetch": "^3.3.2",
     "nodemailer": "^6.9.7",
     "nodemon": "^3.0.1"
   },

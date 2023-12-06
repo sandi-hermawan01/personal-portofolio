@@ -1,4 +1,7 @@
+require("dotenv").config();
+
 const express = require("express");
+const PORT = process.env.PORT || 3000;
 const path = require("path");
 const fileupload = require("express-fileupload");
 
@@ -55,8 +58,9 @@ app.use((req, res) => {
   res.json("404");
 });
 
-app.listen("3000", () => {
-  console.log("listening......");
+app.listen(PORT, function (err) {
+  if (err) console.log(err);
+  console.log("Server Listening on PORT", PORT);
 });
 
 module.exports = app;
