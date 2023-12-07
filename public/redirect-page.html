@@ -4,11 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="./assets/img/personal-brand-logo.jpg" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <title>Redirect Page</title>
   </head>
   <body>
-    <div>
-      <h1>This Page Not - Found</h1>
+    <div class="maintenance-section">
+      <h1>Feature Maintenace...</h1>
+      <button onclick="window.history.back()">
+        <i class="bx bxs-left-arrow"></i>
+        Back
+      </button>
     </div>
+
+    <style>
+      .maintenance-section {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+      }
+      .maintenance-section h1 {
+        color: #616161;
+      }
+      .maintenance-section button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 95px;
+        height: 40px;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+        color: #616161;
+        gap: 10px;
+      }
+    </style>
   </body>
 </html>
