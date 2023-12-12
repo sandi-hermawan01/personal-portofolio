@@ -46,7 +46,7 @@ app.post("/upload", (req, res) => {
 });
 
 app.get("/admin", (req, res) => {
-  res.sendFile(path.join(basic_path, "redirect-page.html"));
+  res.sendFile(path.join(basic_path, "dashboard.html"));
 });
 
 app.get("/:blog", (req, res) => {
