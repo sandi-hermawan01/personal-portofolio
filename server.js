@@ -1,7 +1,7 @@
 require("dotenv").config();
 
 const express = require("express");
-const PORT = "https://personal-portofolio-mu.vercel.app";
+const PORT = process.env.PORT || 3000;
 const path = require("path");
 const fileupload = require("express-fileupload");
 
@@ -46,7 +46,7 @@ app.post("/upload", (req, res) => {
 });
 
 app.get("/admin", (req, res) => {
-  res.sendFile(path.join(initial_path, "dashboard.html"));
+  res.sendFile(path.join(basic_path, "redirect-page.html"));
 });
 
 app.get("/:blog", (req, res) => {
