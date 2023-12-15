@@ -56,6 +56,24 @@ let projects = [
       other: "0%",
     },
   },
+  {
+    name: "Blog Publisher",
+    about: "",
+    tags: "#fullstack, #html, #css, #react, #big-project",
+    live: "http://31.220.107.58:3000",
+    github: "",
+    image: "./assets/img/zsans-blog-publisher-promo.png",
+    languages: {
+      html: "80%",
+      css: "80%",
+      javascript: "80%",
+      reactjs: "90%",
+      nodejs: "7%",
+      database: "6%",
+      tailwind: "50%",
+      other: "40%",
+    },
+  },
 ];
 
 let projectGallery = document.querySelector(".project-gallery");
