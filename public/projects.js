@@ -58,7 +58,8 @@ let projects = [
   },
   {
     name: "Blog Publisher",
-    about: "",
+    about:
+      "Zsans Blog Publisher, is a media provider of various articles, you can easily publish and write your articles, create your articles and achieve top trending!",
     tags: "#fullstack, #html, #css, #react, #big-project",
     live: "http://31.220.107.58:3000",
     github: "",
@@ -68,8 +69,8 @@ let projects = [
       css: "80%",
       javascript: "80%",
       reactjs: "90%",
-      nodejs: "7%",
-      database: "6%",
+      nodejs: "70%",
+      database: "45%",
       tailwind: "50%",
       other: "40%",
     },
