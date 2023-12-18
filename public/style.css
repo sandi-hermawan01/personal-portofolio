@@ -719,18 +719,6 @@ section {
   line-height: 1.5rem;
 }
 
-.card-info::before {
-  content: "";
-  position: absolute;
-  margin: auto;
-  height: 2px;
-  border-top: 2px dashed #616161;
-  width: 30%;
-  top: 85%;
-  left: -12.5%;
-  transform: rotate(90deg);
-}
-
 /* contact section */
 
 .contact-container {
