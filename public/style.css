@@ -204,30 +204,23 @@ body {
 /* hero section */
 
 #hero-section {
-  position: relative;
-  height: 70vh;
   display: flex;
+  flex-direction: column;
+  height: 100vh;
   justify-content: center;
   align-items: center;
+  text-align: center;
   color: #fff;
 }
 
-#hero-section canvas {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-}
-
-.first-section {
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
 .hero-content {
-  position: relative;
-  z-index: 300;
+  z-index: 100;
+}
+
+.hero-bg {
+  position: absolute;
+  color: ghostwhite;
+  filter: blur(1px);
 }
 
 .hero-headline {
@@ -279,6 +272,8 @@ section {
   font-weight: 300;
   text-transform: uppercase;
   position: relative;
+  z-index: 2;
+  animation: animate 1s ease-in-out;
 }
 
 .section-title::before {
@@ -287,10 +282,10 @@ section {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 4.5rem;
+  font-size: 5.5rem;
   font-weight: 900;
   opacity: 0.1;
-  z-index: -1;
+  z-index: 1;
 }
 
 .section-info {
