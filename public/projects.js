@@ -61,11 +61,7 @@ let projects = [
     about:
       "Zsans Blog Publisher, is a media provider of various articles, you can easily publish and write your articles, create your articles and achieve top trending!",
     tags: "#fullstack, #html, #css, #react, #big-project",
-<<<<<<< HEAD
     live: "http://zsans-product.tech:4173",
-=======
-    live: "http://31.220.107.58:4173/",
->>>>>>> 7a714549f1eabd5f9e44fd63a0e4cc2eb3b23289
     github: "",
     image: "./assets/img/zsans-blog-publisher-promo.png",
     languages: {
