@@ -1,5 +1,24 @@
 let projects = [
   {
+    name: "Blog Publisher",
+    about:
+      "Zsans Blog Publisher, is a media provider of various articles, you can easily publish and write your articles, create your articles and achieve top trending!",
+    tags: "#fullstack, #html, #css, #react, #big-project",
+    live: "http://zsans-product.tech:4173",
+    github: "",
+    image: "./assets/img/zsans-blog-publisher-promo.png",
+    languages: {
+      html: "50%",
+      css: "30%",
+      javascript: "80%",
+      reactjs: "90%",
+      nodejs: "70%",
+      database: "45%",
+      tailwind: "70%",
+      other: "40%",
+    },
+  },
+  {
     name: "Sans Blog",
     about:
       "Sans Blog is my personal blog, in which you can read and publish a blog with the image, tittle and content of your blog.",
@@ -54,25 +73,6 @@ let projects = [
       database: "0%",
       tailwind: "0%",
       other: "0%",
-    },
-  },
-  {
-    name: "Blog Publisher",
-    about:
-      "Zsans Blog Publisher, is a media provider of various articles, you can easily publish and write your articles, create your articles and achieve top trending!",
-    tags: "#fullstack, #html, #css, #react, #big-project",
-    live: "http://zsans-product.tech:4173",
-    github: "",
-    image: "./assets/img/zsans-blog-publisher-promo.png",
-    languages: {
-      html: "50%",
-      css: "30%",
-      javascript: "80%",
-      reactjs: "90%",
-      nodejs: "70%",
-      database: "45%",
-      tailwind: "70%",
-      other: "40%",
     },
   },
 ];
