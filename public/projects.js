@@ -1,5 +1,23 @@
 let projects = [
   {
+    name: "Portofolio v2",
+    about: "Personal portofolio second vesion.",
+    tags: "#react, #fullstack, #html, #css",
+    live: "./features/spotify-clone/spoti-home.html",
+    github: "",
+    image: "./assets/img/portofoliov2.jpg",
+    languages: {
+      html: "90%",
+      css: "40%",
+      javascript: "20%",
+      reactjs: "90%",
+      nodejs: "0%",
+      database: "0%",
+      tailwind: "80%",
+      other: "0%",
+    },
+  },
+  {
     name: "Blog Publisher",
     about:
       "Zsans Blog Publisher, is a media provider of various articles, you can easily publish and write your articles, create your articles and achieve top trending!",

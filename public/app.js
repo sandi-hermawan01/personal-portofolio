@@ -7,11 +7,61 @@ let projectImage = document.querySelector(".project-details .image");
 let projectDetail = document.querySelector(".project-details .details");
 
 // buttons
-
 let liveBtn = document.querySelector("#live-btn");
-let githubBtn = document.querySelector("#github-btn");
-
 let progressTrack = [...document.querySelectorAll(".progress-track")];
+
+//new
+projectCards.map((project, i) => {
+  project.addEventListener("click", () => {
+    projectCards.map((card) => card.classList.remove("active"));
+
+    project.classList.add("active");
+
+    let data = JSON.parse(project.getAttribute("data-info"));
+
+    setUpProjectInfo(data);
+  });
+});
+
+const setUpProjectInfo = (data) => {
+  projectImage.src = data.image;
+  projectName.innerHTML = data.name;
+  projectDetail.innerHTML = data.about;
+  liveBtn.href = data.live;
+
+  progressTrack.map((item) => {
+    let progress = item.querySelector(".progress");
+
+    progress.style.width = data.languages[item.getAttribute("data-name")];
+  });
+};
+
+// filters
+
+const filters = [...document.querySelectorAll(".filter-btn")];
+
+filters.map((btn, i) => {
+  btn.addEventListener("click", () => {
+    filters.map((item) => item.classList.remove("active"));
+
+    btn.classList.add("active");
+
+    let tag = btn.getAttribute("data-filter-value");
+
+    projectCards.map((project) => {
+      if (tag == "all") {
+        project.style.display = null;
+      } else if (!project.getAttribute("data-tags").includes(tag)) {
+        project.style.display = "none";
+      } else {
+        project.style.display = null;
+      }
+    });
+  });
+});
+
+projectCards[0].classList.add("active");
+setUpProjectInfo(projects[0]);
 
 //hacker effect
 var canvas = document.getElementById("canvas");
@@ -172,60 +222,6 @@ document.addEventListener("DOMContentLoaded", function () {
   // Listen for clicks anywhere in document
   document.addEventListener("click", handleCloseOutside);
 });
-
-//new
-projectCards.map((project, i) => {
-  project.addEventListener("click", () => {
-    projectCards.map((card) => card.classList.remove("active"));
-
-    project.classList.add("active");
-
-    let data = JSON.parse(project.getAttribute("data-info"));
-
-    setUpProjectInfo(data);
-  });
-});
-
-const setUpProjectInfo = (data) => {
-  projectImage.src = data.image;
-  projectName.innerHTML = data.name;
-  projectDetail.innerHTML = data.about;
-  liveBtn.href = data.live;
-  githubBtn.href = data.github;
-
-  progressTrack.map((item) => {
-    let progress = item.querySelector(".progress");
-
-    progress.style.width = data.languages[item.getAttribute("data-name")];
-  });
-};
-
-// filters
-
-const filters = [...document.querySelectorAll(".filter-btn")];
-
-filters.map((btn, i) => {
-  btn.addEventListener("click", () => {
-    filters.map((item) => item.classList.remove("active"));
-
-    btn.classList.add("active");
-
-    let tag = btn.getAttribute("data-filter-value");
-
-    projectCards.map((project) => {
-      if (tag == "all") {
-        project.style.display = null;
-      } else if (!project.getAttribute("data-tags").includes(tag)) {
-        project.style.display = "none";
-      } else {
-        project.style.display = null;
-      }
-    });
-  });
-});
-
-projectCards[0].classList.add("active");
-setUpProjectInfo(projects[0]);
 
 // navbar
 

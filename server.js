@@ -6,6 +6,7 @@ const path = require("path");
 const fileupload = require("express-fileupload");
 
 let initial_path = path.join(__dirname, "./public/features/blogging-site");
+let second_path = path.join(__dirname, "./public/new-theme");
 let basic_path = path.join(__dirname, "./public");
 
 const app = express();
@@ -51,6 +52,10 @@ app.get("/admin", (req, res) => {
 
 app.get("/:blog", (req, res) => {
   res.sendFile(path.join(initial_path, "blog.html"));
+});
+
+app.get("/second-theme", (req, res) => {
+  res.sendFile(path.join(second_path, "index.html"));
 });
 
 app.listen(PORT, function (err) {
