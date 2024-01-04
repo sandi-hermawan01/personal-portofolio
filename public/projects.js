@@ -22,7 +22,7 @@ let projects = [
     about:
       "Zsans Blog Publisher, is a media provider of various articles, you can easily publish and write your articles, create your articles and achieve top trending!",
     tags: "#fullstack, #html, #css, #react, #big-project",
-    live: "http://zsans-product.tech:4173",
+    live: "https://www.zsans-product.tech",
     github: "",
     image: "./assets/img/zsans-blog-publisher-promo.png",
     languages: {
