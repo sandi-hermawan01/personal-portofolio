@@ -3,7 +3,7 @@ let projects = [
     name: "Portofolio v2",
     about: "Personal portofolio second vesion.",
     tags: "#react, #fullstack, #html, #css",
-    live: "",
+    live: "https://zsans-product.online",
     github: "",
     image: "./assets/img/portofoliov2.jpg",
     languages: {
